@@ -1,0 +1,22 @@
+ion-toolbar {
+    --background: #fbc02d;
+    --color: white;
+}
+ion-button {
+    width: 80px;
+    --background: #f9a825;
+    --background-focused: #ffeb3b;
+}
+.activated {
+    --color-activated: black;
+    --color: #e0e0e0;
+    --background: #00acc1;
+}
+.slide-card {
+    height: 90%;
+    width: 100%;
+}
+.vertical-slide > ion-slides {
+    background-color: #e0e0e0;
+    height: calc(100vh - 231px);
+}

@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      HomePage
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="ion-padding">
+    <!-- prodile component -->
+    <app-profile-img></app-profile-img>
+  </div>
+
+  <!-- user-detail component -->
+  <app-user-detail *ngFor="let item of sampleDataH" [itemDetail]=item (itemNameH)="seletcedItem($event)"></app-user-detail>
+
+</ion-content>
+<ion-footer class="ion-text-center">
+  <ion-button class="second-page-btn" (click)="onClick()" shape="round">
+    Second Page
+  </ion-button>
+</ion-footer>

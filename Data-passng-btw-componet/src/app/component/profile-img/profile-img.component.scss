@@ -1,0 +1,25 @@
+.profile-cont {
+    height: 80px;
+    width: 80px;
+    background: #c3cac3;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+img {
+    height: 78px;
+    display: grid;
+    width: 78px;
+    background: green;
+    border-radius: 50%;
+    place-content: center;
+}
+.date-gender {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+ion-label > *{
+    font-weight: bold;
+}

@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons> -->
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <ion-slides #slides autoplay="true" loop="true" pager="false" scrollbar="true" [options]="slideOpts">
+    <ion-slide class="bg-1">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            Slide 1
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Awesome content
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="bg-2">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            Slide 2
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Awesome content
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="bg-3">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            Slide 3
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Awesome content
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="bg-4">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            Slide 4
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Awesome content
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="bg-5">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            Slide 5
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Awesome content
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-slides #buttonSlideEle pager="false" scrollbar="false" [options]="buttonSlide">
+    <ion-slide *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12,13,14]">
+      <ion-button (click)="onClick(item)" [ngClass]="{'activated': item==selectedItem}">
+        {{item}}
+      </ion-button>
+    </ion-slide>
+  </ion-slides>
+
+  <div class="vertical-slide">
+    <ion-slides pager="false" [options]="verticalSlide">
+      <ion-slide *ngFor="let item of [1,2,3,4,5]">
+        <ion-card button class="slide-card" mode="ios">
+          <ion-card-header>
+            <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+            <ion-card-title>Awesome Title {{item}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-text color="primary">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. </ion-text>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>

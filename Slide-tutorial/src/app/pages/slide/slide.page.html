@@ -1,0 +1,21 @@
+<ion-content>
+  <ion-slides #slides autoplay="true" loop="true" pager="false" scrollbar="true" [options]="slideOpts"
+    (ionSlideDidChange)="ionSlideDidChange($event)" (ionSlideDoubleTap)="ionSlideDoubleTap($event)"
+    (ionSlideDrag)="ionSlideDrag($event)" (ionSlideNextEnd)="ionSlideNextEnd($event)"
+    (ionSlideReachEnd)="ionSlideReachEnd($event)">
+    <ion-slide class="bg-1">
+      <h1>Slide 1</h1>
+    </ion-slide>
+    <ion-slide class="bg-2">
+      <h1>Slide 2</h1>
+    </ion-slide>
+    <ion-slide class="bg-3">
+      <h1>Slide 3</h1>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+<ion-footer>
+  <ion-toolbar (click)="_moveDashboard()">
+    <ion-title class="ion-text-center">{{skip}}</ion-title>
+  </ion-toolbar>
+</ion-footer>
