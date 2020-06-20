@@ -1,4 +1,4 @@
-# Ionic 5 & Angular Tutorials
+# Ionic 5 & Angular Tutorials 🤘
 
 Here is the source code for all the tutorials associated with latest ionic version 5 with angular.
 
@@ -45,7 +45,7 @@ npm install
 ionic serve
 ```
 
-## Tadada
+## ✨😇 Tadada 😇✨
 
 See how simple it was like this you can run and build any project in this repo. For more info. about building the projects for Android / iOS platforms.
 
