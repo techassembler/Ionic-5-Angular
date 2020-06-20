@@ -32,7 +32,8 @@ Ctrl+Shift+i or right-click -> click Inspect
 
  2. Open the Visual Studio Code & open the project like File -> Open Folder : navigate to project folder like "Data-passing-btw-componet".
 
- 3. Project is open in Visual Studio Code then open the terminal by navigating to the menu : Terminal -> New Terminal or Ctrl + ` .
+ 3. Project is open in Visual Studio Code then open the terminal by navigating to the menu :
+ Terminal -> New Terminal or Ctrl + ` .
 
 4. Use the package manager to install the node_module.
 
