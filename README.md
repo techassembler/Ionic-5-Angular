@@ -21,7 +21,7 @@ For code editing / viewing. I recommend it, as it has many builtin functionality
 For viewing, debugging, performance and many functionality.
 It's a great development tool for a front-end developer.
 
-to view it just hit: in a new Tab
+To view it just hit: in a new Tab
 
 Ctrl+Shift+i or right-click -> click Inspect
 
