@@ -57,4 +57,4 @@ See how simple it was like this you can run and build any project in this repo. 
 4. [More Tutorials](https://www.youtube.com/watch?v=Of6DXZ3-yDQ&list=PLeEImLH0g06Degx9g6A_MnJbfHLKKwKj8).
 
 # [Subscribe](https://www.youtube.com/channel/UC1N8wlsT71TyWOFq4y-4V6Q)!.. the Channel
-## Don't forget to press the Bell icon to get updates.
+## Don't forget to press the 🔔 Bell icon to get updates.
