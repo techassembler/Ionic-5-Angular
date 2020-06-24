@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Date-Picker</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>MMMM</ion-label>
+    <ion-datetime displayFormat="MMMM" [value]="custDate"></ion-datetime>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label position="floating">MM DD YY</ion-label>
+    <ion-datetime #datePicker value="1995-04-15" displayFormat="DDD. MMM DD, YY" [min]="minDate" max="2024"
+      (ionFocus)="ionFocus($event)" (ionChange)="ionChange($event)" placeholder="Select Date"></ion-datetime>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label>YYYY</ion-label>
+    <ion-datetime readonly="true" [pickerOptions]="customPickerOptions" placeholder="Custom Options"
+      displayFormat="YYYY" min="1981" max="2002"></ion-datetime>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label>hh:mm a</ion-label>
+    <ion-datetime displayFormat="HH:mm" pickerFormat="HH:mm" [min]="minTime"></ion-datetime>
+  </ion-item>
+
+  <ion-button expand="block" (ionPickerWillPresent)="ionPickerWillPresent($event)" (click)="openPicker(2, 3, multiColumnOptions)">Show Multi Column Picker</ion-button>
+
+
+</ion-content>
