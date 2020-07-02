@@ -18,77 +18,80 @@ export var userList =
     "picture": "user"
 }
 
-export var sampleData = [{
-    "id": "0001",
-    "type": "Donut",
-    "name": "Cake",
+export var sampleData = [
+    {
+        "id": "0001",
+        "type": "Donut",
+        "name": "Cake",
 
-    "batters":
+        "batters":
 
-        [
-            { "id": "1001", "type": "Regular" },
-            { "id": "1002", "type": "Chocolate" },
-            { "id": "1003", "type": "Blueberry" },
-            { "id": "1004", "type": "Devil's Food" }
-        ]
-    ,
-    "topping":
-        [
-            { "id": "5001", "type": "None" },
-            { "id": "5002", "type": "Glazed" },
-            { "id": "5005", "type": "Sugar" },
-            { "id": "5007", "type": "Powdered Sugar" },
-            { "id": "5006", "type": "Chocolate with Sprinkles" },
-            { "id": "5003", "type": "Chocolate" },
-            { "id": "5004", "type": "Maple" }
-        ]
-},
-{
-    "id": "0002",
-    "type": "Bread",
-    "name": "Cake",
+            [
+                { "id": "1001", "type": "Regular" },
+                { "id": "1002", "type": "Chocolate" },
+                { "id": "1003", "type": "Blueberry" },
+                { "id": "1004", "type": "Devil's Food" }
+            ]
+        ,
+        "topping":
+            [
+                { "id": "5001", "type": "None" },
+                { "id": "5002", "type": "Glazed" },
+                { "id": "5005", "type": "Sugar" },
+                { "id": "5007", "type": "Powdered Sugar" },
+                { "id": "5006", "type": "Chocolate with Sprinkles" },
+                { "id": "5003", "type": "Chocolate" },
+                { "id": "5004", "type": "Maple" }
+            ]
+    },
+    {
+        "id": "0002",
+        "type": "Bread",
+        "name": "Cake",
 
-    "batters":
+        "batters":
 
-        [
-            { "id": "1001", "type": "Regular" },
-            { "id": "1002", "type": "Chocolate" },
-            { "id": "1003", "type": "Blueberry" },
-            { "id": "1004", "type": "Devil's Food" }
-        ]
-    ,
-    "topping":
-        [
-            { "id": "5001", "type": "None" },
-            { "id": "5002", "type": "Glazed" },
-            { "id": "5005", "type": "Sugar" },
-            { "id": "5007", "type": "Powdered Sugar" },
-            { "id": "5006", "type": "Chocolate with Sprinkles" },
-            { "id": "5003", "type": "Chocolate" },
-            { "id": "5004", "type": "Maple" }
-        ]
-}, {
-    "id": "0003",
-    "type": "Egg",
-    "name": "Cake",
+            [
+                { "id": "1001", "type": "Regular" },
+                { "id": "1002", "type": "Chocolate" },
+                { "id": "1003", "type": "Blueberry" },
+                { "id": "1004", "type": "Devil's Food" }
+            ]
+        ,
+        "topping":
+            [
+                { "id": "5001", "type": "None" },
+                { "id": "5002", "type": "Glazed" },
+                { "id": "5005", "type": "Sugar" },
+                { "id": "5007", "type": "Powdered Sugar" },
+                { "id": "5006", "type": "Chocolate with Sprinkles" },
+                { "id": "5003", "type": "Chocolate" },
+                { "id": "5004", "type": "Maple" }
+            ]
+    },
+    {
+        "id": "0003",
+        "type": "Egg",
+        "name": "Cake",
 
-    "batters":
+        "batters":
 
-        [
-            { "id": "1001", "type": "Regular" },
-            { "id": "1002", "type": "Chocolate" },
-            { "id": "1003", "type": "Blueberry" },
-            { "id": "1004", "type": "Devil's Food" }
-        ]
-    ,
-    "topping":
-        [
-            { "id": "5001", "type": "None" },
-            { "id": "5002", "type": "Glazed" },
-            { "id": "5005", "type": "Sugar" },
-            { "id": "5007", "type": "Powdered Sugar" },
-            { "id": "5006", "type": "Chocolate with Sprinkles" },
-            { "id": "5003", "type": "Chocolate" },
-            { "id": "5004", "type": "Maple" }
-        ]
-}]
+            [
+                { "id": "1001", "type": "Regular" },
+                { "id": "1002", "type": "Chocolate" },
+                { "id": "1003", "type": "Blueberry" },
+                { "id": "1004", "type": "Devil's Food" }
+            ]
+        ,
+        "topping":
+            [
+                { "id": "5001", "type": "None" },
+                { "id": "5002", "type": "Glazed" },
+                { "id": "5005", "type": "Sugar" },
+                { "id": "5007", "type": "Powdered Sugar" },
+                { "id": "5006", "type": "Chocolate with Sprinkles" },
+                { "id": "5003", "type": "Chocolate" },
+                { "id": "5004", "type": "Maple" }
+            ]
+    }
+]
