@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Swipable Segments</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event,i)">
+    <ion-segment-button [value]="item" *ngFor="let item of segmentList;let i = index"
+      (click)="_segmentSelected(item,i)">
+      <ion-label>{{item}}</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+
+  <ion-slides #slide (ionSlideDidChange)="_ionSlideDidChange($event)">
+    <ion-slide *ngFor="let item of slideList">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>{{item}} Subtitle</ion-card-subtitle>
+          <ion-card-title>{{item}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{item}} content
+          <p>
+            I saw a werewolf with a Chinese menu in his hand.
+            Walking through the <ion-text color="danger"><sub>streets</sub></ion-text> of Soho in the rain.
+            He <ion-text color="primary"><i>was</i></ion-text> looking for a place called Lee Ho Fook's.
+            Gonna get a <ion-text color="secondary"><a>big dish of beef chow mein.</a></ion-text>
+            <ion-text color="danger">
+              <ion-icon name="cut"></ion-icon>
+            </ion-text>
+          </p>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
