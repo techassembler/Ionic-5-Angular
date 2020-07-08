@@ -1,0 +1,20 @@
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.justify-content-between {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.img-size {
+    height: 50px;
+    width: 50px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

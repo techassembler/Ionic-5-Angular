@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Infinite Scroll</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let item of dataList">
+      <ion-label class="justify-content-between">
+        <div class="circle" [ngStyle]="{'backgroundColor': item.color}"></div>
+        <div class="ion-padding-start">{{item.value}}</div>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="_infiniteScroll($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+  <!-- custum img in loading   -->
+  <!-- <ion-infinite-scroll threshold="100px" (ionInfinite)="doInfinite($event)">
+  <ion-infinite-scroll-content loadingSpinner="none" class="center">
+    <img class="img-size" src="../../../assets/images/ionic.png">
+  </ion-infinite-scroll-content>
+</ion-infinite-scroll> -->
+
+</ion-content>
