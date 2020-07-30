@@ -1,0 +1,21 @@
+
+
+ion-segment-button {
+    // --indicator-color: red;
+    // --color-checked: pink;
+    // --color-hover: yellow;
+    // --indicator-height: 3px;
+}
+
+// advance css
+ion-segment-button{
+--indicator-box-shadow: transparent !important;
+border-radius: 2rem !important;
+padding: 0 0.2em ;
+margin: 0.5em;
+--background: white;
+--color: #33691e;
+--background-checked: linear-gradient(to right, #5a9216, #8bc34a) !important;
+--color-checked: white;
+--indicator-color: transparent !important; /* this solution */
+}
