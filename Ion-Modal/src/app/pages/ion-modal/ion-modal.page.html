@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ionModal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="_openModal()" expand="block" shape="round">
+    Open Modal
+  </ion-button>
+
+  <ion-card  *ngIf="fromModalData">
+    <ion-card-header>
+      <ion-card-title>{{fromModalData}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+</ion-content>

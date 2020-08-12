@@ -1,0 +1,30 @@
+<ion-app>
+
+
+  <ion-menu contentId="menu-content" menuId="menu-content" side="start" type="overlay"
+    (ionDidOpen)="_ionDidOpen($event)" (ionWillClose)="_ionWillClose($evnt)">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Side Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item *ngFor="let item of sideMenuList" (click)="onMenuClick(item.title)">
+          <ion-label>{{item.title}}</ion-label>
+          <ion-icon slot="start" [name]="item.icon"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <div class="center">
+            <ion-button (click)="onMenuClick('close')" expand="block" fill="clear" shape="round">
+              Close
+            </ion-button>
+          </div>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+
+  <ion-router-outlet id="menu-content"></ion-router-outlet>
+</ion-app>
