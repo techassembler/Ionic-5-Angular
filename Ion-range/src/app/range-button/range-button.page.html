@@ -39,9 +39,9 @@
     <ion-range min="0" max="100" dualKnobs="true" pin="true" snaps="true" step="1" value="0"
       (ionChange)="rangeChange($event)">
     </ion-range>
-
-    <ion-range min="0" max="100" snaps="true" dualKnobs="true" ticks="true" step="20" value="0" pin="true"
-      color="danger" (ionChange)="rangeChange($event)">
+<!-- debounce to get the value once -->
+    <ion-range min="0" max="100" debounce="500" snaps="true" dualKnobs="true" ticks="true" step="20" value="0"
+      pin="true" color="danger" (ionChange)="rangeChange($event)">
       <ion-icon size="small" slot="start" name="sunny"></ion-icon>
       <ion-icon slot="end" name="sunny"></ion-icon>
     </ion-range>
