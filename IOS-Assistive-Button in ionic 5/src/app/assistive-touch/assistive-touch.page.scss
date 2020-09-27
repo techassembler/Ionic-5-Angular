@@ -1,0 +1,38 @@
+// #yourDivId {
+//     margin: 0px;
+//     position: fixed;
+//     right: 5px;
+//     top: 45%;
+//     z-index: 9999;
+//     border-radius: 50%;
+//     font-size: 0;
+//     background: #1586c7;
+//     border: 1px solid #ffffff82;
+//     box-shadow: 0px 0px 7px 3px #1586c7;
+//     height: 30px;
+//     width: 30px;
+// }
+
+#yourDivId {
+    margin: 0px;
+    position: fixed;
+    right: 10px;
+    top: 45%;
+    z-index: 9999;
+    border-radius: 10px;
+    font-size: 0;
+    background: #e6e8e9;
+    border: 1px solid #ffffff82;
+    box-shadow: 0px 0px 7px 3px #cdd4d8;
+    height: 40px;
+    width: 40px;
+    display: flex;
+}
+
+.inside-circle {
+    height: 35px;
+    width: 35px;
+    background: #f9f7f7;
+    border-radius: 50%;
+    margin: auto;
+}
