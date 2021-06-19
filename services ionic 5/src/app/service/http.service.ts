@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
-import { catchError } from 'rxjs/operators';
+import { catchError } from "rxjs/operators";
+
 
 @Injectable({
   providedIn: 'root'
@@ -10,16 +11,21 @@ export class HttpService {
 
   constructor(private http: HttpClient) { }
 
+  getMyList(url): Observable<any> {
+    let header = new HttpHeaders();
+    header = header.set('app-id', '1160cdb3d74007b7c053c3ec89');
+    return this.http.get(url, { headers: header }).pipe(catchError(err => this.handleError(err)))
 
-  callForecastApi(url): Observable<any> {
-    let headers = new HttpHeaders();
-    headers = headers.set('app-id', '60cdb3d743007b7c053c3ec89');
-    return this.http.get(url, { headers: headers })
-      .pipe(catchError(res => this.handleError(res)))
   }
 
-  handleError(error: Response | any) {
-    let errorFromServer = error.error;
-    return throwError(errorFromServer);
+  handleError(err) {
+    let errorFromServer = err.error;
+    return throwError(errorFromServer)
   }
+
+  // anotherFubt() {
+
+  // }
+
+
 }

@@ -6,41 +6,29 @@
 
 <ion-content>
 
-  <!-- <div> -->
-  <!-- ({{i}}) {{item}} {{odd}}
+  <!-- <div *ngFor="let item of [1,2,3,4,5,6]">
+    {{item}}
   </div>
 
-  <ng-container *ngFor="let item of [1,2,3,4,5]; let i=index; let odd=odd; trackBy: trackById"> -->
+  <ng-container *ngFor="let item of [1,2,3,4,5,6]">
+    {{item}}
+  </ng-container> -->
 
+  <div>{{errorMsg}}</div>
 
-  <!-- <ion-card *ngFor="let item of [1,2,3,4,5]; let i=index; let odd=odd; trackBy: trackById">
+  <ion-card *ngFor="let item of list">
     <ion-card-header>
-      <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
-      <ion-card-title>Awesome Title</ion-card-title>
+      <ion-card-subtitle>{{item.title}}</ion-card-subtitle>
+      <ion-card-title> Name : {{item.firstName}} {{item.lastName}}</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      Awesome content
-    </ion-card-content>
-  </ion-card> -->
-
-  <!-- </ng-container> -->
-  <!-- </div> -->
-  <div>{{error}}</div>
-  <ion-card *ngFor="let item of list; let i=index; let odd=odd; trackBy: trackById">
-    <ion-card-header>
-
-      <ion-card-title style="
-      display: flex;
-      align-items: center;
-  ">
-        <ion-card-subtitle class="ion-padding">{{item.title}}</ion-card-subtitle>{{item.firstName}} {{item.lastName}}
-      </ion-card-title>
       <ion-avatar>
         <img [src]="item.picture" />
       </ion-avatar>
-    </ion-card-header>
-    <ion-card-content>
-      {{item.email}}
+      Email : {{item.email}}
     </ion-card-content>
   </ion-card>
+
+
+
 </ion-content>

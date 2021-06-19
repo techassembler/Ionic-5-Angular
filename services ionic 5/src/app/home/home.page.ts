@@ -1,5 +1,7 @@
+
 import { Component, OnInit } from '@angular/core';
-import { HttpService } from "src/app/service/http.service";
+import { HttpService } from '../service/http.service';
+
 
 @Component({
   selector: 'app-home',
@@ -7,22 +9,27 @@ import { HttpService } from "src/app/service/http.service";
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
+
   private list: Array<Object>;
-  private error: string;
-  constructor(private httpService: HttpService) { }
+  private errorMsg: string;
+
+  constructor(private http: HttpService) { }
 
   ngOnInit() {
-    this.httpService.callForecastApi('https://dummyapi.io/data/api/user?limit=10').subscribe((data) => {
-      if (data) {
-        console.log(data.data);
-        this.list = data.data;
-      }
-    }, (error) => {
-      console.log(error, 'subs')
-      this.error = error
-    });
+    this.callGetService();
   }
 
+
+  callGetService() {
+    let url = 'https://dummyapi.io/data/api/user?limit=10';
+    this.http.getMyList(url).subscribe(data => {
+      this.list = data.data;
+    },
+      (error) => {
+        console.log(error);
+        this.errorMsg = error
+      });
+  }
 
 
 
